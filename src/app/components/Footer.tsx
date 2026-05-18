@@ -68,7 +68,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link to="/contact" className="text-[11px] text-cream/70 hover:text-rose transition-colors duration-300 font-light">
-                  Contact Us
+                  Contact & Grievance
                 </Link>
               </li>
               <li>
@@ -119,6 +119,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <button 
+                  onClick={() => window.dispatchEvent(new Event('open-cookie-settings'))}
+                  className="text-[11px] text-cream/70 hover:text-rose transition-colors duration-300 font-light"
+                >
+                  Cookie Settings
+                </button>
+              </li>
+              <li>
                 <Link to="/terms" className="text-[11px] text-cream/70 hover:text-rose transition-colors duration-300 font-light">
                   Terms
                 </Link>
@@ -136,7 +144,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4 sm:gap-6">
               <a
-                href="https://instagram.com/rare.wellness"
+                href="https://instagram.com/relaxandrefresh.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[11px] text-cream/50 hover:text-rose transition-colors duration-300 font-light"

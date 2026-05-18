@@ -1,3 +1,4 @@
+import { CookieBanner } from "./CookieBanner";
 import { Outlet } from "react-router";
 import { useState, useEffect } from "react";
 import { Navbar } from "./Navbar";
@@ -31,6 +32,10 @@ export function Root() {
         <main className="flex-1">
           <Outlet />
         </main>
+        
+        {/* The Cookie Banner is placed right here! */}
+        <CookieBanner />
+        
         <Footer />
       </div>
     </>
